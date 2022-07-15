@@ -12,7 +12,10 @@ const ChooseModul = () => {
         studiengang: "",
         startsemester: "",
         studienlaenge: "",
-        verpflichtungsfach: ""
+        vertiefungsrichtung: "",
+        einfuehrungsmodule: "",
+        praktikum : ""
+
     });
 
     const handleChange = (e) => {
@@ -42,7 +45,7 @@ const ChooseModul = () => {
                 <label className='block text-gray-600 text-sm font-normal'>Studiengang</label>
                 <input type={"text"} name="studiengang" value={modul.studiengang} onChange={(e) => handleChange(e)} className='h-10 w-96 border mt-2 px-2 py-2'></input>
             </div>
-
+    
             <div className='items-center justify-center h-14 w-full my-4'>
                 <label className='block text-gray-600 text-sm font-normal'>Startsemester</label>
                 <input type={"text"} name="startsemester" value={modul.startsemester} onChange={(e) => handleChange(e)} className='h-10 w-96 border mt-2 px-2 py-2'></input>
@@ -54,8 +57,18 @@ const ChooseModul = () => {
             </div>
 
             <div className='items-center justify-center h-14 w-full my-4'>
-                <label className='block text-gray-600 text-sm font-normal'>Verpflichtungsfächer</label>
-                <input type={"text"} name="verpflichtungsfach" value={modul.verpflichtungsfach} onChange={(e) => handleChange(e)} className='h-10 w-96 border mt-2 px-2 py-2'></input>
+                <label className='block text-gray-600 text-sm font-normal'>Vertiefungsrichtung</label>
+                <input type={"text"} name="vertiefungsrichtung" value={modul.vertiefungsrichtung} onChange={(e) => handleChange(e)} className='h-10 w-96 border mt-2 px-2 py-2'></input>
+            </div>
+
+            <div className='items-center justify-center h-14 w-full my-4'>
+                <label className='block text-gray-600 text-sm font-normal'>Einführungsmodule</label>
+                <input type={"text"} name="einfuehrungsmodule" value={modul.einfuehrungsmodule} onChange={(e) => handleChange(e)} className='h-10 w-96 border mt-2 px-2 py-2'></input>
+            </div>
+
+            <div className='items-center justify-center h-14 w-full my-4'>
+                <label className='block text-gray-600 text-sm font-normal'>Praktikum</label>
+                <input type={"text"} name="praktikum" value={modul.praktikum} onChange={(e) => handleChange(e)} className='h-10 w-96 border mt-2 px-2 py-2'></input>
             </div>
 
             <div className='items-center justify-center h-14 w-full my-4 pt-4'>
